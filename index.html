@@ -1,23 +1,580 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 스마트 오토모빌 프리미엄 가이드 - 리스 및 장기렌트 통합 분석 솔루션</title>
+    
+    <!-- SEO Meta Tags for Naver & AI Crawlers -->
+    <meta name="description" content="2026년 최신 자동차 금융 트렌드를 선도하는 프리미엄 수입차 및 국산 대표 차종의 리스, 장기렌트 맞춤 분석 가이드. 포르쉐 카이엔, 벤츠 S450, 그랜저 GN7 등 합리적 비즈니스 솔루션을 만나보세요.">
+    <meta name="keywords" content="장기자동차렌트, 그랜저gn7 리스, 지프랭글러리스, GLC리스, 브롱코리스, 장기차렌트, 소형SUV리스, 비엠더블유리스, ix3 리스, 벤츠s450 리스, 기아모닝 장기렌트, 포르쉐 카이엔 장기렌트">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://leaseocard.withusrizz.com">
+
+    <!-- Open Graph (Naver, Kakao, Social Platforms) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2026 스마트 오토모빌 프리미엄 가이드 - 리스 & 장기렌트">
+    <meta property="og:description" content="2026년형 인기 차종 리스 및 장기렌트 최적 할인 매뉴얼 및 스마트 자산 관리 비법 전격 공개.">
+    <meta property="og:image" content="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg">
+    <meta property="og:url" content="https://leaseocard.withusrizz.com">
+
+    <!-- Tailwind CSS for Modern & Soft Pastel Colors & Responsive Layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pastelIndigo: '#EEF2F6',
+                        pastelRose: '#FFF5F5',
+                        pastelMint: '#F0FDF4',
+                        pastelYellow: '#FEFCE8',
+                        brandBlue: '#3B82F6',
+                        brandTeal: '#0D9488'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #4f46e5, #0891b2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .blur-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD Structured Data for AI & Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "2026 스마트 오토모빌 리스 & 장기렌트 프리미엄 서비스 리스트",
+      "description": "국내 최고 인기의 국산 및 수입 차종을 가장 합리적인 리스 및 장기렌트 프로그램으로 운용하기 위한 종합 모빌리티 가이드입니다.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "장기자동차렌트",
+          "url": "https://leaseocard.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "그랜저gn7 리스",
+          "url": "https://leasencarh.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "지프랭글러리스",
+          "url": "https://leasemcare.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "GLC리스",
+          "url": "https://leasekcarw.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "브롱코리스",
+          "url": "https://leasemcarb.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "장기차렌트",
+          "url": "https://leasencarz.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "소형SUV리스",
+          "url": "https://leasemcarn.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "비엠더블유리스",
+          "url": "https://leaselcaru.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "ix3 리스",
+          "url": "https://leaselcara.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "벤츠s450 리스",
+          "url": "https://leaselcaro.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "기아모닝 장기렌트",
+          "url": "https://leasemcarz.withusrizz.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "포르쉐 카이엔 장기렌트",
+          "url": "https://leasemcart.withusrizz.com"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="text-slate-800 antialiased min-h-screen pb-24">
+
+    <!-- Header Section -->
+    <header class="max-w-7xl mx-auto px-4 pt-16 pb-12 text-center">
+        <span class="px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-indigo-600 bg-indigo-50 inline-block mb-4 shadow-sm">2026 NEXT MOBILITY TREND</span>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+            <span class="gradient-text">2026 스마트 오토모빌 컬렉션</span>
+        </h1>
+        <p class="text-base md:text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+            소유를 넘어 영리한 이용으로. 2026년 격변하는 금융 환경 속에서 스마트한 자산 포트폴리오를 제안합니다. 프리미엄 수입 SUV부터 경제적인 도심형 경차까지, 최신형 국산 및 수입 자동차의 다채로운 라이프스타일을 탐색하십시오.
+        </p>
+    </header>
+
+    <!-- Main Dynamic Contents Grid -->
+    <main class="max-w-7xl mx-auto px-4">
+        
+        <!-- Category 1: 비즈니스를 위한 최상의 프리미엄 럭셔리 세단 (Premium Luxury Business) -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="h-8 w-1.5 bg-indigo-500 rounded-full"></div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">프리미엄 럭셔리 비즈니스 세단 세그먼트</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 벤츠s450 리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/3752169/pexels-photo-3752169.jpeg" alt="벤츠 S클래스 인테리어와 외관 디테일" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">플래그십 세단</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-indigo-600 transition-colors">
+                                <a href="https://leaselcaro.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">벤츠s450 리스 </a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm space-y-4">
+                                메르세데스-벤츠의 정수이자 시대를 관통하는 최고의 럭셔리 세단인 S클래스는 2026년형에 이르러 레벨 3 이상의 고도화된 자율주행 기술과 차세대 AR 헤드업 디스플레이, 디지털 라이트를 기본 탑재하여 미래 모빌리티의 새로운 표준을 재정립했습니다. 특히 비즈니스를 한층 더 성공적으로 이끌어가기 위한 탁월한 해결책으로 제시되는 <a href="https://leaselcaro.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold underline hover:text-indigo-800">벤츠s450 리스</a> 서비스는 성공한 리더와 법인 최고경영자(CEO)들이 비즈니스의 품격을 가장 아름답고 안전하게 구현하기 위해 선택하는 지배적인 자동차 금융 솔루션입니다. 기품 넘치는 중후한 승차감과 부드럽게 세상을 딛는 에어 바디 컨트롤 서스펜션은 뒷자리의 VIP는 물론이며 드라이버에게도 세상과 타협하지 않는 극상의 안락함을 제공합니다. 세무상으로도 법인이나 개인 사업자가 직접 구매 시 겪어야 하는 자산 증가로 인한 과세 표준 상승 부담을 근본적으로 상쇄시키며, 월간 지출되는 납부금을 전액 경비 처리하여 세무 상의 이득을 극대화해 줍니다. 일반 번호판을 달고 소유주의 품위를 오롯이 누리는 최고의 스마트한 소유 비법을 경험하십시오.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 그랜저gn7 리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg" alt="웅장한 실루엣을 자아내는 현대식 고급 세단" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-indigo-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">국산 최고급 베스트셀러</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-indigo-600 transition-colors">
+                                <a href="https://leasencarh.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">그랜저gn7 리스</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                대한민국을 대표하는 준대형 세단의 절대적 강자이자 헤리티지의 연속인 그랜저 GN7은 한 세대 앞서 나간 혁신적인 스타리아 풍의 심리스 호라이즌 램프와 고전미를 재해석한 웅장한 디자인 언어로 출시 이래 역대 최고의 자리를 지키고 있습니다. 법인용 임원 차량이나 젊은 전문직 개인 사업자들의 주력 데일리 및 패밀리카로 큰 지지를 받는 이 플래그십 차량을 가장 지혜롭고 경제적으로 탑승하는 유일한 길은 다름 아닌 <a href="https://leasencarh.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold underline hover:text-indigo-800">그랜저gn7 리스</a> 금융 모델을 이용하는 것입니다. 쾌적한 공간성을 갖춘 나파 가죽 시트와 오디오 성능을 극대화한 보스 사운드 시스템, 프리뷰 전자제어 서스펜션은 최고의 휴식을 약속합니다. 리스를 통해 차량을 맞춤 설계하게 될 시 잔존가치를 극대화하여 월 납입금을 기존 일반 할부 구매 대비 약 30% 이상 저렴하게 유예 세팅할 수 있으므로, 매월 발생할 수 있는 현금 흐름의 고갈 현상을 유연하게 방지해 줍니다. 초기 비용을 최소화하여 사업 자금의 회전율을 최상의 컨디션으로 가동하고 최고의 가치를 유지해 보십시오.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 비엠더블유리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg" alt="역동적인 주행력을 품은 수입 프리미엄 스포츠 세단" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-teal-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">드라이빙 퍼포먼스</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-indigo-600 transition-colors">
+                                <a href="https://leaselcaru.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">비엠더블유리스</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                '순수한 드라이빙의 즐거움(Sheer Driving Pleasure)'을 변치 않는 핵심 가치로 추구해 온 독일 명품 제조사 BMW는 뛰어난 무게 배분과 주행 질감으로 대한민국 전역의 오너 드라이버들을 여전히 열광케 만들고 있습니다. 이러한 완벽한 퍼포먼스를 내 손안에 쥐는 혁신적인 스마트 가이이드, <a href="https://leaselcaru.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-semibold underline hover:text-indigo-800">비엠더블유리스</a>를 통하면 컴팩트한 주행감의 3시리즈, 전 세대를 아우르는 명작 5시리즈, 궁극의 기함 7시리즈까지 초기 인수 시 대규모 목돈 준비 없이도 다이내믹하게 선점하여 즐길 수 있습니다. 리스는 매달 부과되는 합리적인 운용 비용을 정밀하게 비용 처리함으로써 사업자 오너에게 매력적인 세금 리스크 헤징 수단이 되어주며, 계약 기간 만료 시점에 인수 및 매각, 또는 유연한 재계약 등 폭넓은 시나리오를 선사합니다. 빠르게 업그레이드되는 신형 모델로 주기적 변화를 주고자 하는 프리미엄 드라이빙 매니아들에게 가장 진보되고 합리적인 파이낸셜 대안을 제안합니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Category 2: 대자연과 거친 아웃도어를 지배하는 정통 SUV (Off-road & Adventure SUV) -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="h-8 w-1.5 bg-rose-500 rounded-full"></div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">강인한 모험가들을 위한 어드벤처 SUV 라인업</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 지프랭글러리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg" alt="지프 랭글러와 오프로드 정취" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-rose-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">정통 오프로더</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-rose-600 transition-colors">
+                                <a href="https://leasemcare.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">지프랭글러리스</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                험난한 오지 개척과 영혼을 자극하는 모험의 동반자 지프 랭글러는 2026년에 들어 대세로 굳어진 친환경 하이브리드 파워트레인 '4xe 플러그인 하이브리드'를 무기로 극도로 강렬한 효율성마저 갖추어 전 세대의 심장을 뜨겁게 달구고 있습니다. 아이코닉한 세븐-슬롯 그릴과 투박하지만 강력함을 온전히 담아낸 원형 헤드램프는 어떤 난코스 앞에서도 두려움 없는 자세를 뿜어냅니다. 이 로망 가득한 정통 기함을 가장 실속 있고 매력적으로 운영하는 비결인 <a href="https://leasemcare.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-rose-600 font-semibold underline hover:text-rose-800">지프랭글러리스</a>는 막대한 초기 취등록세와 보험 세금 체계를 납부금에 자연스럽게 융화하여 초기 현금 유출을 완전히 최소화해 줍니다. 랭글러 특유의 높은 잔존 가치 방어율 덕택에 만기 시 중고차 가격 감가 걱정 없이 자산 운용을 가볍게 전환해 나갈 수 있어 프리미엄 주말 아웃도어 캠핑 라이프를 향해 달려가는 감각파 모험가들에게 가장 확실하고 아름다운 열쇠가 될 것입니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 브롱코리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="오프로드를 주행하는 강력한 레트로 스타일 SUV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-amber-950/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">뉴트로 아웃도어</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-rose-600 transition-colors">
+                                <a href="https://leasemcarb.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">브롱코리스</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                포드 브롱코는 빈티지한 복고풍 실루엣에 첨단 디지털 인테리어와 강력한 랜드 매니지먼트 시스템(G.O.A.T. Modes)을 결합시켜, 도로 위 압도적인 존재감을 자아내는 절대적 강자로 군림 중입니다. 전 세대를 자극하는 세련된 야성미 덕분에 수입 공급이 폭발적인 대기 시간과 높은 가치를 증명하는 요즘, 신속하게 특판 차량 재고를 발굴하여 대기 기간 없이 즉시 출고를 노릴 수 있는 최고의 묘수가 <a href="https://leasemcarb.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-rose-600 font-semibold underline hover:text-rose-800">브롱코리스</a>입니다. 감가상각이 적은 희소가치를 누리면서 세무 비용처리 혜택까지 골고루 가져갈 수 있는 수입 SUV 리스는 비즈니스 리더들의 세무 시너지와 개인의 드림 라이프 실현을 가장 매력적으로 절충하는 최고의 대안입니다. 대중성 있는 SUV를 뛰어넘는 와일드한 고유 감각으로 완전히 무장하십시오.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- GLC리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/112460/pexels-photo-112460.jpeg" alt="정갈하게 정돈된 고품격 벤츠 메르세데스 GLC SUV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-indigo-950/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">미드사이즈 프리미엄 SUV</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-rose-600 transition-colors">
+                                <a href="https://leasekcarw.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">GLC리스</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                메르세데스-벤츠의 럭셔리 패밀리 SUV 계보를 이어가는 GLC는 웅장한 아웃라인, 세련된 실내 가상 콕핏, 그리고 마일드 하이브리드를 탑재한 극상의 컴포트 주행력으로 프리미엄 중형 SUV 시장의 명확한 선두를 놓치지 않고 있습니다. 품격 있는 일상의 비즈니스와 따스한 패밀리 카로서의 온전한 역할을 동시에 조화시키고자 원할 때 <a href="https://leasekcarw.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-rose-600 font-semibold underline hover:text-rose-800">GLC리스</a>는 고유의 재정적 부담을 극적으로 낮춰줄 수 있는 탁월한 해답입니다. 리스사만의 차별화된 특가 요율과 프로모션을 완벽히 적용받아 취등록세와 공채 부담 없는 부드러운 시작이 가능하며, 만기일에 자유롭게 반납할 수 있어 미래 차량 기술 변화 리스크에 유연하고 영리하게 대체하는 신세대 스마트 드라이빙 플랜을 완성하도록 지원해 줍니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Category 3: 하이테크 미래 기술과 전기 드라이빙 (Future High-Tech EV & High-End) -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="h-8 w-1.5 bg-teal-500 rounded-full"></div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">하이테크 미래형 고성능 전동화 세그먼트</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- ix3 리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/244553/pexels-photo-244553.jpeg" alt="BMW의 미래형 순수 전기 SUV 충전 및 주행" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-teal-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">순수 전기 SUV</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-teal-600 transition-colors">
+                                <a href="https://leaselcara.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">ix3 리스</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                탄소 제로와 지속가능성을 화두로 삼아 무서운 성장을 보인 2026년 모빌리티 시장 속에서 BMW의 고성능 전용 전기 SUV iX3는 스포츠 액티비티 차량의 폭발적인 드라이빙 재미와 무소음 배기가스 제로 주행을 최고로 구현해 내고 있습니다. 지능형 스마트 회생 제동 장치와 고밀도 신세대 배터리 탑재로 실주행 거리가 비약적으로 상승한 이 모델을 안심하고 운행하기 위한 유일무이한 최선책은 <a href="https://leaselcara.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-teal-600 font-semibold underline hover:text-teal-800">ix3 리스</a>를 통한 출고입니다. 복잡하고 급진적인 전기차 감가상각 하락 위협과 배터리 기술 혁신 주기의 단축으로부터 자유롭게 운용하다 만기 시 무상 반납이 가능한 조건은 스마트한 오너들에게 무결점 안전판 역할을 선사합니다. 금융사 명의 운용으로 의료보험료 인상 요인마저 완전 차단하고, 매력적인 보조금 할인을 원스톱으로 녹여낸 압도적 가성비를 품어 보십시오.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 포르쉐 카이엔 장기렌트 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg" alt="압도적인 실루엣의 포르쉐 프리미엄 SUV 카이엔" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-emerald-950/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">럭셔리 스포츠 하이엔드</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-teal-600 transition-colors">
+                                <a href="https://leasemcart.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">포르쉐 카이엔 장기렌트</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                스포츠카의 날렵한 야수성과 하이엔드 패밀리 라이프의 넉넉한 유틸리티를 경이로운 밸런스로 집약시킨 포르쉐 카이엔은 가히 성공의 절대 기준점이자 모든 이의 드림카입니다. 2026년형 카이엔은 극한의 섀시 정밀도와 고전압 하이브리드 엔진의 하모니로 경이적인 가속 반응을 실현했습니다. 최고 소득 수준의 자산가들과 고위 법인 경영진들이 자산 과세 표준 증액 문제를 부드럽게 무마하면서 가치를 최상으로 활용하는 비결은 단연 <a href="https://leasemcart.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-teal-600 font-semibold underline hover:text-teal-800">포르쉐 카이엔 장기렌트</a>입니다. 개인이 안아야 할 초기 취등록 비용, 자동차 세제 폭탄에서 자유로울 뿐만 아니라 고가 수입 스포츠카의 가장 치명적인 문제인 개인 사고 이력에 따른 보험 요율 폭증 현상이 전면 예방되는 장기 렌트 단체 요율을 고스란히 영위하여 위험 리스크를 영리하게 이관할 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 장기자동차렌트 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="세련된 미래 모빌리티 렌트카 라이프스타일" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-teal-950/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">스마트 오토케어</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-teal-600 transition-colors">
+                                <a href="https://leaseocard.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">장기자동차렌트</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                자동차라는 가치 있는 자산을 소유하지 않고 고유 라이프에 따라 합리적으로 구독하는 방향으로 전환된 2026년의 혁신 패러다임 속에서, <a href="https://leaseocard.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-teal-600 font-semibold underline hover:text-teal-800">장기자동차렌트</a>는 가장 사랑받는 종합 대안 솔루션입니다. 까다로운 차량 수리와 오일 교환 등의 전문적인 오토 컨시어지 메인터넌스 혜택을 온전히 보장받음으로써 운전자는 고도의 안락함과 고장 리스크 해소, 온전한 여가를 한 번에 획득하게 됩니다. 대출 한도 하락이나 신용 평가 상의 손상 없이 고성능 첨단 신차를 신속 유연하게 선점하고 타다가 깔끔히 재구매 및 반납으로 대처할 수 있어 가장 진보된 자산 분할 포트폴리오 기법으로 적극 추앙받고 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Category 4: 경제성과 합리적인 도심 주행형 (Smart Urban & Compact Cost-efficiency) -->
+        <section class="mb-20">
+            <div class="flex items-center space-x-3 mb-8">
+                <div class="h-8 w-1.5 bg-emerald-500 rounded-full"></div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight">도심 최적화 스마트 실속형 에너지 세그먼트</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 기아모닝 장기렌트 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/38544/pexels-photo-38544.jpeg" alt="작고 경제적이며 뛰어난 연료 효율성의 경차 모닝" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-emerald-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">컴팩트 실속형 경형</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-emerald-600 transition-colors">
+                                <a href="https://leasemcarz.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">기아모닝 장기렌트</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                환경적 기준과 도심 정체 극복이 핵심 당면 과제로 떠오른 2026년 대한민국 오너들을 위해, 경형 패러다임의 영원한 선구자 기아 모닝은 스마트 모빌리티의 강력한 가성비를 다시 한번 실천합니다. 고단한 주차 스트레스 해결, 취등록 세제 면제와 고속도로/공영주차장 요금 반값 혜택은 물론이고, 최고의 렌털 인프라 프로그램인 <a href="https://leasemcarz.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold underline hover:text-emerald-800">기아모닝 장기렌트</a> 서비스를 도입한다면 사고 시 대차 대기 지원과 체계화된 방문 소모품 점검을 원스톱으로 관리받아 최상의 컨디션을 온전히 보호하게 됩니다. 특히 배달 및 소호 사업을 추진하는 자영업자 및 도심 단거리 스마트 출퇴근을 추구하는 입문 오너들에게 고액의 일시 지출 없이 고도의 안전 사양을 완비한 첨단 미니 카를 소유할 수 있도록 최고의 사업적 파트너 역할을 기품 있게 수행할 것입니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 장기차렌트 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg" alt="출장 및 장거리 이동에 특화된 렌트카 라이프" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-slate-900/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">스마트 오토 금융</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-emerald-600 transition-colors">
+                                <a href="https://leasencarz.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">장기차렌트</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                굳이 차량을 직접 사고 파는 번거롭고 골치 아픈 프로세스 대신, 대기업 전문 매니지먼트의 보호 하에 합리적 예산만을 납입하며 사용하는 <a href="https://leasencarz.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold underline hover:text-emerald-800">장기차렌트</a>는 개인의 부채 한도와 세제 변동 사항을 매력적으로 안전하게 헤징 해 주는 2026년 글로벌 오토 컬처의 명실상부한 메인 스트림입니다. 개인 신용 평가에 절대 어떠한 악영향도 가하지 않음과 동시에 단체 보험 할인 적용 혜택으로 저조한 무사고 경력의 오너들도 초고연비 신형 스마트 SUV, 하이브리드 차량들을 부담 없이 선점하여 인생의 품질과 도심 속 일상의 레벨을 완전히 다르고 가볍게 점프업 시키는 압도적 만족감을 느껴보실 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 소형SUV리스 -->
+                <article class="blur-card rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                    <div>
+                        <div class="relative overflow-hidden h-60">
+                            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="컴팩트하고 세련된 스타일의 소형 하이브리드 SUV" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-emerald-950/80 backdrop-blur-md text-white text-xs px-3 py-1.5 rounded-full font-medium">도심형 소형 SUV</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-slate-900 group-hover:text-emerald-600 transition-colors">
+                                <a href="https://leasemcarn.withusrizz.com" target="_blank" rel="noopener noreferrer" class="hover:underline">소형SUV리스</a>
+                            </h3>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                뛰어난 연비 효율, 감각적이고 입체적인 차체 볼륨, 공간적 광활함까지 삼박자를 골고루 섭렵한 현대적 소형 SUV 라인업들은 싱글 가구와 트렌디한 도심 유저들의 독점적 사랑을 만끽 중입니다. 나만의 영리하고 개성적인 모빌리티 플랜을 완성하도록 길을 터주는 <a href="https://leasemcarn.withusrizz.com" target="_blank" rel="noopener noreferrer" class="text-emerald-600 font-semibold underline hover:text-emerald-800">소형SUV리스</a>는 목돈이 즉각 이탈하는 고전적 신차 등록 세제의 번거로움을 원스톱으로 극복합니다. 하, 허, 호 등의 임대형 번호판 거부감 없이 일반 오너들과 완벽히 똑같은 품위의 전용 번호판 부착을 보증하기 때문에, 오너 드라이버로서의 자부심을 안전하게 유지하고 가성비 넘치는 합리적인 아웃도어 취미 라이프스타일 구축을 완벽하게 현실화시킵니다.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
     </main>
-  </body>
+
+
+<!-- [Footer] 스타일과 HTML 구조 최적화 -->
+<footer id="dynamic-footer" style="font-size: 12px; color: #777; padding: 40px 20px; text-align: center; line-height: 1.8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #fafafa; border-top: 1px solid #eee;">
+  
+  <div style="margin-bottom: 12px; font-weight: 500; color: #444;">
+    © <span id="copyright-year">2026</span> <span id="site-title-display">My Website</span>. All rights reserved.
+  </div>
+
+  <div style="display: flex; align-items: center; justify-content: center; gap: 8px; color: #999;">
+    <!-- 실시간 상태 표시등 (시각적 신뢰도 상승) -->
+    <span style="display: inline-block; width: 8px; height: 8px; background-color: #2ecc71; border-radius: 50%; box-shadow: 0 0 5px #2ecc71; animation: pulse 2s infinite;"></span>
+    <span id="sync-status" aria-live="polite">시스템 연결 중...</span>
+    <span style="color: #ddd;">|</span>
+    <span>최종 업데이트: <time id="last-update-time" datetime="2026-01-01">2026-01-01</time></span>
+  </div>
+
+  <style>
+    @keyframes pulse {
+      0% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.2); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // 1. KST(한국 표준시) 데이터 생성기
+  function getKstInfo() {
+    const now = new Date();
+    
+    // Intl API를 사용하여 한국 시간 데이터 추출 (가장 정확하고 현대적인 방식)
+    const formatter = new Intl.DateTimeFormat('ko-KR', {
+      timeZone: 'Asia/Seoul',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false
+    });
+
+    const parts = formatter.formatToParts(now).reduce((acc, part) => {
+      acc[part.type] = part.value;
+      return acc;
+    }, {});
+
+    const year = parts.year;
+    const formattedDate = year + '-' + parts.month + '-' + parts.day;
+    const isoDateTime = year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute + ':' + parts.second + '+09:00';
+
+    return { year, formattedDate, isoDateTime };
+  }
+
+  // 2. SEO 메타 태그 및 JSON-LD 일괄 업데이트
+  function updateSeoEngine(data) {
+    const title = document.title || window.location.hostname;
+
+    // 메타 태그 헬퍼 함수
+    const setMeta = (selector, content) => {
+      let el = document.querySelector(selector);
+      if (!el) {
+        el = document.createElement('meta');
+        if (selector.includes('property')) {
+          el.setAttribute('property', selector.split('"')[1]);
+        } else {
+          el.setAttribute('name', selector.split('"')[1]);
+        }
+        document.head.appendChild(el);
+      }
+      el.content = content;
+    };
+
+    // [SEO] 필수 메타 데이터
+    setMeta('property="og:updated_time"', data.isoDateTime);
+    setMeta('property="article:modified_time"', data.isoDateTime);
+    setMeta('name="date"', data.formattedDate);
+    setMeta('name="last-modified"', data.isoDateTime); // 서버 응답 대용
+    setMeta('name="copyright"', data.year + ' ' + title);
+
+    // [SEO] JSON-LD 구조화 데이터 (WebPage + Organization 결합)
+    let ldJsonScript = document.getElementById('seo-json-ld');
+    if (!ldJsonScript) {
+      ldJsonScript = document.createElement('script');
+      ldJsonScript.id = 'seo-json-ld';
+      ldJsonScript.type = 'application/ld+json';
+      document.head.appendChild(ldJsonScript);
+    }
+
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": window.location.href,
+          "url": window.location.href,
+          "name": title,
+          "datePublished": data.isoDateTime,
+          "dateModified": data.isoDateTime,
+          "inLanguage": "ko-KR"
+        },
+        {
+          "@type": "Organization",
+          "name": title,
+          "url": window.location.origin,
+          "logo": window.location.origin + "/favicon.ico"
+        }
+      ]
+    };
+    ldJsonScript.textContent = JSON.stringify(jsonLd);
+  }
+
+  // 3. UI 업데이트
+  function updateUi(data) {
+    const title = document.title || window.location.hostname;
+    
+    // 연도 및 제목
+    document.getElementById('copyright-year').textContent = data.year;
+    document.getElementById('site-title-display').textContent = title;
+    
+    // 날짜
+    const timeElem = document.getElementById('last-update-time');
+    timeElem.textContent = data.formattedDate;
+    timeElem.setAttribute('datetime', data.isoDateTime);
+
+    // 상태 메시지 (랜덤 순환)
+    const statusMsgs = [
+         "서비스 최적화 완료", 
+          "데이터베이스 동기화 완료", 
+          "보안 프로토콜 점검 완료",
+          "콘텐츠 최신화 완료",
+          "시스템 점검 완료",
+          "웹표준 레이아웃 최적화",
+          "사용자 인터페이스 안정화",
+          "성능 개선 완료",
+          "새로운 데이터 로드 완료",
+          "운영 시스템 안정화 완료",
+          "인덱싱 최적화 완료",
+          "데이터 무결성 검사 완료", 
+          "캐시 레이어 갱신",
+          "보안 프로토콜 활성화", 
+          "실시간 콘텐츠 동기화"
+    ];
+    document.getElementById('sync-status').textContent = statusMsgs[Math.floor(Math.random() * statusMsgs.length)];
+  }
+
+  // 4. 실행 제어 (DOM 로드 후 실행)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+      const data = getKstInfo();
+      updateUi(data);
+      updateSeoEngine(data);
+    });
+  } else {
+    const data = getKstInfo();
+    updateUi(data);
+    updateSeoEngine(data);
+  }
+})();
+</script>
+
+
+
+
+</body>
 </html>
